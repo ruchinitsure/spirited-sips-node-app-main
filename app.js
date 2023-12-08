@@ -24,7 +24,7 @@ const options = {
   family: 4,
 };
 
-const CONNECTION_STRING = "mongodb://127.0.0.1:27017/project";
+const CONNECTION_STRING = "mongodb://0.0.0.0:27017/project";
 mongoose.connect(CONNECTION_STRING, options);
 
 const app = express();
