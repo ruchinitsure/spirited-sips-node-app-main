@@ -24,12 +24,12 @@ const options = {
   family: 4,
 };
 
-const CONNECTION_STRING = "mongodb://0.0.0.0:27017/project";
+const CONNECTION_STRING = "mongodb://127.0.0.1:27017/project";
 mongoose.connect(CONNECTION_STRING, options);
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:3000', 'https://leafy-gumption-a6a15e.netlify.app/'];
+const allowedOrigins = ['http://localhost:3000', 'https://master--relaxed-bienenstitch-78fb1e.netlify.app'];
 app.use(cors({
   credentials: true,
   origin: allowedOrigins
